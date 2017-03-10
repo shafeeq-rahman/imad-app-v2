@@ -23,13 +23,13 @@ var articles= {
 'article-two': {
     title: 'Article Two | Shafeeq',
     heading: 'Article Two',
-    date: 'March 10, 2017',
+    date: 'March 11, 2017',
     content: `<p> This is My Second Article</p>`
 },
 'article-three': {
     title: 'Article Three | Shafeeq',
     heading: 'Article Three',
-    date: 'March 10, 2017',
+    date: 'March 12, 2017',
     content: `<p> This is My Third Article</p>`
 },
 };
