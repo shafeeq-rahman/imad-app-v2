@@ -12,35 +12,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles= {
-'article-one': {
-    title: 'Article One | Shafeeq',
-    heading: 'Article One',
-    date: 'March 10, 2017',
-    content: ` <p>
-            This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.
-        </p>
-         <p>
-            This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.
-        </p>
-         <p>
-            This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.This is the content for my First Article.
-        </p>`
-},
-'article-two': {
-    title: 'Article Two | Shafeeq',
-    heading: 'Article Two',
-    date: 'March 11, 2017',
-    content: `<p> This is My Second Article</p>`
-},
-'article-three': {
-    title: 'Article Three | Shafeeq',
-    heading: 'Article Three',
-    date: 'March 12, 2017',
-    content: `<p> This is My Third Article</p>`
-},
-};
-
 function createTemplate (data) {
   var title = data.title;
   var date = data. date;
