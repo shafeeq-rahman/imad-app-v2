@@ -61,7 +61,7 @@ function hash(input, salt) {
     return hashed.toString('hex');
 }
 
-app.get(`/hash/:input`, function (req,res) {
+app.get('/hash/:input', function (req,res) {
     var hashedString = hash(req.params.input,'this-is-some-random-string');
     res.send(hashedString);
 });
@@ -95,9 +95,8 @@ app.post('/login', function(req,res){
                var salt =dbString.split('$')[2];
                var hashedPassword = hash(password,salt);
                if(hashedPassword === dbString) {
-           res.send('User successfully created:' + username);
-               }
-               else {
+           res.send('Credentials Correct!');
+               } else {
                    res.send('Invalid request');
                }
          }
